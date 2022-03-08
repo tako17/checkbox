@@ -1,0 +1,59 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.check:checked ~ span {
+  background-color: rgb(255, 187, 0);
+}
+
+label {
+  display: block;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+input {
+  display: none;
+}
+span {
+  padding: 7px 7px 12px;
+
+  border-radius: 4px;
+}
+
+span::after {
+  display: inline-block;
+  content: "";
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  border: 1px solid gray;
+  margin-left: 10px;
+}
+.firstspan::after {
+  margin-left: 31px;
+}
+
+.check:checked ~ span::after {
+  content: "✔";
+  background-color: gray;
+  color: rgb(255, 187, 0);
+  padding-left: 4px;
+}
+
+button {
+  background-color: rgb(56, 56, 56);
+  color: white;
+  width: 208px;
+}
+i:first-child {
+  margin-right: 20px;
+}
+i:last-child {
+  margin-left: 20px;
+}
+
+.custmcheckbox{
+  display: none;
+}
